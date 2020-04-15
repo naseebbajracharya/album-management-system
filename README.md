@@ -2,4 +2,4 @@
 
 ***In C Programming***
 
-![](AMS-sc.jpg)
+![](AMS-sc.JPG)
