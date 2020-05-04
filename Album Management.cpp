@@ -1,3 +1,4 @@
+//Developed By Naseeb Bajracharya
 #include<stdio.h>
 #include<string.h>
 #include<windows.h>
@@ -40,8 +41,6 @@ void welcome()
 	system("COLOR 3F");
 	printf("\n");
 	printf("\n");
-	for(i=0;i<320;i++)
-		printf("-");
 	printf("\n");
 	printf("                           *o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*     ");
 	printf("\n                          *                                                 *     ");
@@ -57,9 +56,8 @@ void welcome()
 	printf("\n                          *o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*o*     ");
 	printf("\n\n");
 	
-	printf("\t\tCurrent date and time : %s",ctime(&t));
-	for(i=0;i<320;i++)
-		printf("-");
+	printf("\t\t\t   Current date and time : %s",ctime(&t));
+
 	
 	getchar();
 	system("cls");
@@ -73,8 +71,8 @@ void login()
 	system("cls");
 	char name[20];
 	char pass[20];
-	char Username[20]="Negative";
-	char Password[20]="naseeb";
+	char Username[20]="Negative"; //USERNAME
+	char Password[20]="naseeb"; //PASSWORD
 	int i,j;
 	
 	
@@ -144,20 +142,20 @@ void menu();
 		printf("\n");
 		for(i=0;i<80;i++)
 		printf("-");
-		for(j=0;j<80;j++)
+		for(i=0;i<80;i++)
 		printf("-");
 		for(i=0;i<80;i++)
 		printf("-");
 		printf("\n");
-		printf("\n                             ALBUM MANAGEMENT                         ");
+		printf("\n                         ALBUM MANAGEMENT SYSTEM                      ");
 		printf("\n");
 		printf("\n                                 *MENU*               ");
-		printf("\n\n                       Press  1 :  >> ADD NEW ALBUM                           ");
+		printf("\n\n                       Press  1 :  >> ADD A NEW ALBUM                         ");
 		printf("\n\n                       Press  2 :  >> EDIT EXISTING ALBUM                     ");
 		printf("\n\n                       Press  3 :  >> VIEW ALBUMS                             ");
 		printf("\n\n                       Press  4 :  >> SEARCH ALBUMS                           ");
 		printf("\n\n                       Press  5 :  >> DELETE ALBUM                            ");
-		printf("\n\n                       Press  6 :  >> EXIT.                                   ");
+		printf("\n\n                       Press  6 :  >> EXIT                                    ");
 		printf("\n\n");
 		for(i=0;i<80;i++)
 		printf("-");
